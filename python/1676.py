@@ -8,6 +8,11 @@ books = [
     ['옥루몽', '옥련몽'],
 ]
 
-information[authors[1]] = books[4]
+information[authors[0]] = books[1]
+information[authors[1]] = books[3]
+information[authors[2]] = books[-1]
+information[authors[3]] = books[0]
+information[authors[4]] = books[2]
+
 
 print(information)
