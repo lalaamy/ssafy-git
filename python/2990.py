@@ -62,8 +62,9 @@ def sum_of_digits(number):
     if number < 10 :
         return number
     else:
-        num = number // 10
-        return sum_of_digits(num)
+        return (number % 10) + sum_of_digits(number // 10)
+
+
     
 result_3 = sum_of_digits(321)
 print(result_3) # 1 + 2 + 3 = 6
