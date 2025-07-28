@@ -20,12 +20,6 @@ data_2 = '걉파반샤팝다푸거맥파바자들퍼바배들밥샵파누타히�
 arr = []
 # 아래에 코드를 작성하시오.
 
-data_n = data_2.find("내")
-data_h = data_2.find("힘")
-data_dl = data_2.find("들")
-data_da = data_2.find("다")
-
-
 for j in ['내', '힘', '들', '다'] :
     arr.append(data_2.find(j))
 print (arr)
