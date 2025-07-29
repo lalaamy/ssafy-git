@@ -5,11 +5,16 @@ original_word = '코딩 공부는ㄴ 1일ㄹ 1커ㅓ밋ㅅ @@@#^()#_+!&~:"'
 word = '1ㄴ2ㄹ3ㅓ4ㅅ5'
 arr = []
 
-for i in range(len(original_word)) :
-    arr.append(original_word[i])
-print (arr)
+# for i in range(len(original_word)) :
+#     arr.append(original_word[i])
+# print (arr)
 
-result = restructure_word(word, arr)
+# result = restructure_word(word, arr)
+
+# word_lst = []
+# for i in range(len(word)) :
+#     word_lst.append(word[i])
+# print (word_lst)
 
 for i in range(len(word)) :
     if word[i].isdecimal() == True :
