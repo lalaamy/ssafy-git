@@ -2,6 +2,17 @@
 def union_sets(set1, set2):
     return set1 | set2
 
+    #방법 1
+    #return set1.union(set2)
+
+    #방법 2
+    #result = set()
+
+    #방법 3
+    # result.update(set1)
+    # result.update(set2)
+    # return result
+
 
 def union_multiple_sets(*sets):
     if len(sets) == 1 :

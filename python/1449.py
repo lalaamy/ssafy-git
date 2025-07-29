@@ -1,6 +1,9 @@
 # 아래 함수를 수정하시오.
 def intersection_sets(set1, set2):
     sets = set1 & set2
+    if sets == set () :
+        print ('공통 요소가 없습니다')
+
     return len(sets), sets
 
 
