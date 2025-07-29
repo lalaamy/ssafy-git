@@ -11,3 +11,7 @@ print (arr)
 
 result = restructure_word(word, arr)
 
+for i in range(len(word)) :
+    if word[i].isdecimal() == True :
+        j = int(word[i])
+        for j in word[j] :
