@@ -2,7 +2,7 @@ class Myth :
     type_of_myth = 0
 
     def __init__ (self, name) :
-        self.type_of_myth += 1
+        Myth.type_of_myth += 1
         self.name = name
         
     @staticmethod
@@ -15,5 +15,7 @@ n2 = Myth('greek & rome')
 print(n1.name)
 print(n2.name)
 
-Myth.type_of_myth()
-print(Myth.type_of_myth)
+# Myth.type_of_myth()
+print("현재까지 생성된 신화 수 : ", Myth.type_of_myth)
+
+Myth.description()
