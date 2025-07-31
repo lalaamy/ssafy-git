@@ -20,8 +20,13 @@ class Novel(BaseModel):
         self.author = author
 
 class Other_Model(BaseModel):
-    def __init__(self) :
-        BaseModel.save(self)
+    def __init__(self, data_type, title, content, created_at, updated_at) :
+        super().__init__(data_type, title, content, created_at, updated_at)
+
+    def save(self):
+        print('데이터를 다른 장소에 저장합니다.')
+
+
 
 hong = Novel('소설', '홍길동', '고전 소설', 1618, 1692, '허균')
 chun = Novel('소설', '춘향전', '고전 소설', 'unknown', 'unknown', '작자미상')
